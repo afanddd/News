@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Website berita terkini dengan berbagai kategori seperti bisnis, teknologi, olahraga, dan top news.">
+    <meta name="keywords" content="berita, bisnis, teknologi, olahraga, top news">
+    <meta name="google-adsense-account" content="ca-pub-9929235380686780">
+    <title>NewsHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9929235380686780" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>NewsHub</h1>
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#" data-category="all" aria-current="page">Semua</a></li>
+                <li><a href="#" data-category="business">Bisnis</a></li>
+                <li><a href="#" data-category="technology">Teknologi</a></li>
+                <li><a href="#" data-category="sports">Olahraga</a></li>
+                <li><a href="#" data-category="health">Kesehatan</a></li>
+                <li><a href="#" data-category="entertainment">Hiburan</a></li>
+                <li><a href="#" data-category="science">Sains</a></li>
+                <li><a href="#" data-category="politics">Politik</a></li>
+                <li><a href="#" id="view-bookmarks">Bookmark</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari berita..." aria-label="Search news">
+            <button id="search-button" aria-label="Search">Cari</button>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Memuat berita...</p>
+        </div>
+        <div id="news-container"></div>
+        <div id="pagination"></div>
+    </main>
+
+    <div id="toast" class="hidden"></div>
+    <button id="back-to-top" class="hidden" aria-label="Back to top">↑</button>
+    <footer>
+        <p>&copy; 2025 NewsHub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
